@@ -9,3 +9,4 @@ username = "rise"
 
 [ui]
 editor = "vim"
+default-command = "log"
