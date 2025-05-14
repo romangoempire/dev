@@ -1,0 +1,22 @@
+{
+  "if": {
+    "prefix": "if",
+    "body": ["if $1 {", "$0", "}"],
+    "description": "if"
+  },
+  "for loop": {
+    "prefix": "for",
+    "body": ["for i := 0; i < $1; i++ {", "$0", "}"],
+    "description": "for"
+  },
+  "for range": {
+    "prefix": "for range",
+    "body": ["for _, $1 := range $2 {", "$0", "}"],
+    "description": "for range"
+  },
+  "err != nil": {
+    "prefix": "errnil",
+    "body": ["if err != nil {", "log.Fatal(err)", "}"],
+    "description": "err != nil"
+  }
+}

@@ -1,0 +1,12 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = RomanGoEmpire
+	email = 71276897+RomanGoEmpire@users.noreply.github.com
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = master

@@ -1,0 +1,90 @@
+{
+  "vim_mode": true,
+  "auto_update": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // ####################################
+  // Visual
+  // ####################################
+  "theme": "Catppuccin Latte",
+  "icon_theme": "Catppuccin Latte",
+
+  // Font
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 16,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 16,
+  "show_whitespaces": "none",
+
+  "toolbar": {
+    "breadcrumbs": true,
+    "selections_menu": false,
+    "quick_actions": false
+  },
+  "tab_bar": {
+    "show_tab_bar_buttons": false,
+    "show_nav_history_buttons": false
+  },
+
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 500
+    },
+    "hunk_style": "unstaged_hollow"
+  },
+  "show_completion_documentation": false,
+
+  // ####################################
+  // Languages
+  // ####################################
+
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // Python
+    "**/__pycache__",
+    "**/.pytest_cache"
+    // Elixir
+    // "**/_build"
+    // "**/.elixir_ls"
+  ],
+
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": { "name": "ruff" }
+        }
+      ]
+    }
+  },
+
+  // ####################################
+  // LLM
+  // ####################################
+  "agent": {
+    "enabled": false,
+    "button": false,
+    "version": "2"
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+
+  // ####################################
+  // SSH
+  // ####################################
+  "ssh_connections": []
+}

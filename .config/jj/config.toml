@@ -1,0 +1,11 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+name = "RomanGoEmpire"
+email = "71276897+RomanGoEmpire@users.noreply.github.com"
+
+[operation]
+username = "rise"
+
+[ui]
+editor = "vim"

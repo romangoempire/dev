@@ -1,0 +1,97 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : false,
+          "horizontal" : true
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xc547",
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "Magic Trackpad von Roman",
+          "vendorID" : "0x4c",
+          "productID" : "0x265",
+          "serialNumber" : "34:B1:EB:ED:2E:66",
+          "category" : "trackpad"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productID" : "0xc54d",
+          "serialNumber" : "317538733433",
+          "productName" : "USB Receiver",
+          "category" : "mouse",
+          "vendorID" : "0x46d"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.2
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "category" : "trackpad",
+          "productID" : "0x0"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x1532",
+          "productID" : "0x83",
+          "category" : "mouse",
+          "productName" : "Razer Basilisk X HyperSpeed"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "label": "python setup",
+    "command": "py -m venv venv && ./venv/bin/activate && pip install -r requirements.txt"
+  },
+  {
+    "label": "phx start",
+    "command": "mix phx.server"
+  },
+  {
+    "label": "phx reset db",
+    "command": "mix ecto.reset > /dev/null 2>&1"
+  }
+]

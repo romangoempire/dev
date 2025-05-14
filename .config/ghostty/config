@@ -1,0 +1,9 @@
+theme = rose-pine
+
+font-family="JetBrainsMono Nerd Font"
+font-size = 16
+
+background-opacity = 0.75
+background-blur = true
+
+maximize = true
