@@ -41,8 +41,8 @@ fi
 
 color "Install requirements..."
 pip install -q --upgrade pip
-pip install -r -q requirements.txt
-color "Done!z"
+pip install -r requirements.txt
+color "Done!"
 
 echo
 color "Version: $(py --version)"

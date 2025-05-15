@@ -41,11 +41,11 @@ fi
 
 # install from brew
 color "Installing from brew..."
-source brew.sh
+source $HOME/dev/brew.sh
 
 # set zsh as default
-color "Set zsh as default..."
-chsh -s $(which zsh)
+# color "Set zsh as default..."
+#  chsh -s $(which zsh)
 
 # add github key
 github_key="$HOME/.ssh/github"
