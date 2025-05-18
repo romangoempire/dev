@@ -11,7 +11,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(git fzf asdf)
 
-export PATH="$HOME/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 source $HOME/dev/.zsh_aliases
 source $ZSH/oh-my-zsh.sh
