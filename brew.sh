@@ -1,7 +1,7 @@
 #!/bin/bash
 
 brew install -q zsh git wget jj fzf asdf overmind fastfetch btop zsh-syntax-highlighting
-brew install -q elixir elixir-ls ruff
+brew install -q elixir elixir-ls uv
 brew install -q katago
 
 brew install --cask -q 1password raycast google-chrome linearmouse shottr spotify

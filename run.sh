@@ -4,10 +4,6 @@ function color {
     echo -e "\e[1;36m$1\e[0m"
 }
 
-# change dock speed
-write com.apple.dock autohide-time-modifier -float 0
-killall Dock
-
 # list of files/directories to link from ~/dev to $HOME
 items=(
   .config
@@ -27,9 +23,9 @@ rm -rf $HOME/.tool-versions
 ln -s $HOME/dev/.tool-versions $HOME/.tool-versions
 
 # install brew
-if command -v brew >/dev/null 2>&1; then
+if ! command -v brew >/dev/null 2>&1; then
     color "Installing brew..."
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
