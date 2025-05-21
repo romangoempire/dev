@@ -8,14 +8,15 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Tokyo Night",
+  "theme": "Darker Rosé Pine Moon",
   "icon_theme": "Catppuccin Mocha",
+  "minimap": { "show": "never" },
 
   // Font
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 16,
+  "buffer_font_size": 14,
   "ui_font_family": "JetBrainsMono Nerd Font",
-  "ui_font_size": 16,
+  "ui_font_size": 14,
   "show_whitespaces": "none",
 
   "toolbar": {
