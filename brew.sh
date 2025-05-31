@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brew install -q zsh git wget jj fzf asdf overmind fastfetch btop zsh-syntax-highlighting
+brew install -q zsh git wget jj fzf asdf overmind fastfetch btop zsh-syntax-highlighting cloc
 brew install -q elixir elixir-ls uv
 brew install -q katago
 

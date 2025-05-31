@@ -8,9 +8,12 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Darker Rosé Pine Moon",
+  "theme": "Darker Rosé Pine Moon", // in theme.json
   "icon_theme": "Catppuccin Mocha",
-  "minimap": { "show": "never" },
+  "minimap": {
+    "show": "never"
+  },
+
 
   // Font
   "buffer_font_family": "JetBrainsMono Nerd Font",
