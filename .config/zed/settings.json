@@ -7,7 +7,7 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Tokyo Night Storm", // in theme.json
+  "theme": "Tokyo Night", // in theme.json
   "icon_theme": "Catppuccin Mocha",
 
   // Font
