@@ -1,5 +1,4 @@
 {
-  "vim_mode": false,
   "auto_update": true,
   "telemetry": {
     "diagnostics": false,
@@ -8,18 +7,15 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Darker Rosé Pine Moon", // in theme.json
+  "theme": "Tokyo Night Storm", // in theme.json
   "icon_theme": "Catppuccin Mocha",
-  "minimap": {
-    "show": "never"
-  },
-
 
   // Font
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 14,
-  "ui_font_family": "JetBrainsMono Nerd Font",
-  "ui_font_size": 14,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_weight": 500,
+  "buffer_font_size": 15,
+  "ui_font_family": "Fira Code",
+  "ui_font_size": 15,
   "show_whitespaces": "none",
 
   "toolbar": {
