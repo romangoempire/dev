@@ -11,7 +11,7 @@ asdf install python 3.13.3
 asdf set python 3.13.3
 
 asdf plugin add golang
-asdf install golang 1.24.3
+asdf install golang 1.24.5
 
 asdf plugin add erlang
 asdf install erlang 27.3.4
