@@ -7,7 +7,7 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Tokyo Night", // in theme.json
+  "theme": "Darker Rosé Pine Moon", // in theme.json
   "icon_theme": "Catppuccin Mocha",
 
   // Font
@@ -76,8 +76,7 @@
   // ####################################
   "agent": {
     "enabled": false,
-    "button": false,
-    "version": "2"
+    "button": false
   },
   "features": {
     "edit_prediction_provider": "none"

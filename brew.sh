@@ -1,14 +1,21 @@
 #!/bin/bash
 
-brew install -q zsh git wget jj fzf asdf overmind fastfetch btop zsh-syntax-highlighting cloc
-brew install -q elixir elixir-ls uv typst
-brew install -q katago
-
+brew install -q zsh zsh-syntax-highlighting git wget jj fzf asdf overmind fastfetch btop cloc docker
+# programming languages
+brew install -q elixir dotnet
+# tools for languages
+brew install -q elixir-ls livebook uv typst ollama
+# main applications
 brew install --cask -q 1password raycast google-chrome zen linearmouse shottr spotify
+# communication
 brew install --cask -q signal discord whatsapp telegram zoom microsoft-teams
-brew install --cask -q ghostty zed linear-linear bruno obsidian db-browser-for-sqlite visual-studio-code livebook docker ollama
-brew install --cask -q raspberry-pi-imager inkscape figma
-brew install --cask -q obs sabaki katrain tradingview
+# coding
+brew install --cask -q ghostty zed bruno db-browser-for-sqlite visual-studio-code
+brew install --cask -q linear-linear obsidian raspberry-pi-imager inkscape figma
 brew install --cask -q font-jetbrains-mono font-monaspace font-blex-mono-nerd-font font-fire-code
+# Baduk
+brew install --cask -q katago sabaki katrain
+# Other
+brew install --cast -q obs tradingview
 
 brew update && brew upgrade && brew cleanup

@@ -12,11 +12,10 @@ alias zshconfig="zed ~/.zshrc"
 alias sshconfig="zed ~/.ssh/config"
 alias config="zed ~/.config/ghostty/config"
 # python
-alias src=" source $HOME/dev/.init.sh"
+alias src="source $HOME/dev/.init.sh"
 alias d="deactivate"
 alias py="python3"
 alias pip="pip3"
 # elixir - phoenix
 alias mps="mix phx.server"
 alias mer="mix ecto.reset"
-alias mt="mix test"
