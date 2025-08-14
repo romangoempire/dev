@@ -1,21 +1,101 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-brew install -q zsh zsh-syntax-highlighting git wget jj fzf asdf overmind fastfetch btop cloc docker
-# programming languages
-brew install -q elixir
-# tools for languages
-brew install -q elixir-ls livebook uv typst ollama
-# main applications
-brew install --cask -q 1password raycast google-chrome zen linearmouse shottr spotify
-# communication
-brew install --cask -q signal discord whatsapp telegram zoom microsoft-teams
-# coding
-brew install --cask -q ghostty zed bruno db-browser-for-sqlite visual-studio-code
-brew install --cask -q linear-linear obsidian raspberry-pi-imager inkscape figma
-brew install --cask -q font-jetbrains-mono font-monaspace font-blex-mono-nerd-font font-fire-code
-# Baduk
-brew install --cask -q katago sabaki katrain
-# Other
-brew install --cast -q obs tradingview
+is_formula_installed() {
+  brew list --formula --versions "$1" &>/dev/null
+}
 
-brew update && brew upgrade && brew cleanup
+is_cask_installed() {
+  brew list --cask --versions "$1" &>/dev/null
+}
+
+is_formula() {
+  brew info --formula "$1" &>/dev/null
+}
+
+is_cask() {
+  brew info --cask "$1" &>/dev/null
+}
+
+install_bulk() {
+  local formulas=()
+  local casks=()
+
+  for pkg in "$@"; do
+    if is_formula_installed "$pkg" || is_cask_installed "$pkg"; then
+      echo "✅ Already installed: $pkg"
+    else
+      if is_formula "$pkg"; then
+        formulas+=("$pkg")
+      elif is_cask "$pkg"; then
+        casks+=("$pkg")
+      else
+        echo "⚠️  Not found in Homebrew: $pkg"
+      fi
+    fi
+  done
+
+  if ((${#formulas[@]})); then
+    echo "📦 Installing formulas: ${formulas[*]}"
+    brew install "${formulas[@]}"
+  fi
+
+  if ((${#casks[@]})); then
+    echo "📦 Installing casks: ${casks[*]}"
+    brew install --cask "${casks[@]}"
+  fi
+}
+
+# ---------------------------
+# Shell & Terminal Enhancements
+# ---------------------------
+install_bulk zsh zsh-syntax-highlighting \
+  git jj fzf wget asdf cloc tldr fastfetch btop docker
+
+# ---------------------------
+# Programming Languages & Tools
+# ---------------------------
+install_bulk elixir elixir-ls livebook uv typst ollama
+
+# ---------------------------
+# Main Applications
+# ---------------------------
+install_bulk 1password raycast google-chrome zen linearmouse shottr spotify docker-desktop
+
+# ---------------------------
+# Communication Apps
+# ---------------------------
+install_bulk signal discord whatsapp telegram zoom microsoft-teams
+
+# ---------------------------
+# Coding & Development Tools
+# ---------------------------
+install_bulk ghostty zed bruno db-browser-for-sqlite visual-studio-code \
+  linear-linear obsidian raspberry-pi-imager inkscape figma
+
+# ---------------------------
+# Fonts
+# ---------------------------
+install_bulk font-jetbrains-mono font-monaspace \
+  font-blex-mono-nerd-font font-fira-code
+
+# ---------------------------
+# Baduk (Go Game) Tools
+# ---------------------------
+install_bulk katago sabaki katrain
+
+# ---------------------------
+# Other Applications
+# ---------------------------
+install_bulk obs tradingview
+
+# ---------------------------
+# Update & Cleanup
+# ---------------------------
+brew update
+brew upgrade --greedy
+brew cleanup
+
+# Only pause if script is run in a way that would close the terminal
+if [[ $- != *i* ]]; then
+  read -rp "✅ All done! Press Enter to close..."
+fi

@@ -3,8 +3,8 @@ asdf install zoxide 0.9.7
 asdf set zoxide 0.9.7
 
 asdf plugin add sqlite
-asdf install sqlite 3.49.2
-asdf set sqlite 3.49.2
+asdf install sqlite 3.50.4
+asdf set sqlite 3.50.4
 
 asdf plugin add python
 asdf install python 3.13.3

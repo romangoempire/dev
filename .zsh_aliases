@@ -6,7 +6,7 @@
 #cmd
 alias ll="ls -la --color=auto"
 alias c="clear"
-alias gitnuke="git fetch --all --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d"
+alias gitnuke="git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d"
 # configs
 alias zshconfig="zed ~/.zshrc"
 alias sshconfig="zed ~/.ssh/config"
