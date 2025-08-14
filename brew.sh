@@ -2,7 +2,7 @@
 
 brew install -q zsh zsh-syntax-highlighting git wget jj fzf asdf overmind fastfetch btop cloc docker
 # programming languages
-brew install -q elixir dotnet
+brew install -q elixir
 # tools for languages
 brew install -q elixir-ls livebook uv typst ollama
 # main applications
