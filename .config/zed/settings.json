@@ -16,7 +16,7 @@
   "buffer_font_size": 15,
   "ui_font_family": "Fira Code",
   "ui_font_size": 15,
-  "show_whitespaces": "none",
+  "show_whitespaces": "selection",
 
   "toolbar": {
     "breadcrumbs": true,
@@ -32,7 +32,7 @@
     "git_gutter": "tracked_files",
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 500
+      "delay_ms": 0
     },
     "hunk_style": "unstaged_hollow"
   },
@@ -61,7 +61,7 @@
 
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ruff"],
+      "language_servers": ["pyright", "ty", "ruff"],
       "format_on_save": "on",
       "formatter": [
         {

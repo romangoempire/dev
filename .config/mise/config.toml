@@ -1,0 +1,13 @@
+[tools]
+erlang = "latest"
+python = "latest"
+uv = "latest"
+ollama = "latest"
+typst = "latest"
+go = "latest"
+sqlite = "latest"
+rg = "latest"
+zoxide = "latest"
+fzf = "latest"
+elixir-ls = "latest"
+elixir = "latest"

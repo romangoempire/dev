@@ -9,21 +9,19 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git fzf asdf)
+plugins=(git fzf)
 
 export PATH="$HOME/.local/bin:$PATH"
 
-source $HOME/dev/.zsh_aliases
 source $ZSH/oh-my-zsh.sh
+
+source $HOME/dev/.zsh_aliases
+
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
 
 autoload -Uz compinit && compinit
-
-fastfetch

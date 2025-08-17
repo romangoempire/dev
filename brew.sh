@@ -49,12 +49,9 @@ install_bulk() {
 # Shell & Terminal Enhancements
 # ---------------------------
 install_bulk zsh zsh-syntax-highlighting \
-  git jj fzf wget asdf cloc tldr fastfetch btop docker
-
-# ---------------------------
-# Programming Languages & Tools
-# ---------------------------
-install_bulk elixir elixir-ls livebook uv typst ollama
+  git jj mise wget \
+  cloc tldr fastfetch btop \
+  docker
 
 # ---------------------------
 # Main Applications
@@ -69,7 +66,7 @@ install_bulk signal discord whatsapp telegram zoom microsoft-teams
 # ---------------------------
 # Coding & Development Tools
 # ---------------------------
-install_bulk ghostty zed bruno db-browser-for-sqlite visual-studio-code \
+install_bulk ghostty zed bruno datagrip \
   linear-linear obsidian raspberry-pi-imager inkscape figma
 
 # ---------------------------

@@ -8,6 +8,7 @@ function color {
 items=(
   .config
   .zshrc
+  .zsh_aliases
   .tool-versions
   .gitconfig
 )
@@ -17,10 +18,6 @@ for item in "${items[@]}"; do
   rm "$HOME/$item"
   ln -s "$HOME/dev/$item" "$HOME/$item"
 done
-
-color "Create link to ~/dev/.tool-versions..."
-rm -rf $HOME/.tool-versions
-ln -s $HOME/dev/.tool-versions $HOME/.tool-versions
 
 # install brew
 if ! command -v brew >/dev/null 2>&1; then
@@ -43,9 +40,9 @@ source $HOME/dev/brew.sh
 # color "Set zsh as default..."
 #  chsh -s $(which zsh)
 
-# add github key
-github_key="$HOME/.ssh/github"
 
+# generate github key
+github_key="$HOME/.ssh/github"
 if [ ! -f "$github_key" ]; then
     color "Github key does not exist, generating..."
     ssh-keygen -t ed25519 -f "$github_key"
