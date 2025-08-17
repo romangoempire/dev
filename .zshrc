@@ -9,7 +9,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git fzf)
+plugins=(git)
 
 export PATH="$HOME/.local/bin:$PATH"
 
