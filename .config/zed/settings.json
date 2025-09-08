@@ -1,4 +1,5 @@
 {
+  "vim_mode": false,
   "auto_update": true,
   "telemetry": {
     "diagnostics": false,
@@ -7,15 +8,18 @@
   // ####################################
   // Visual
   // ####################################
-  "theme": "Darker Rosé Pine Moon", // in theme.json
-  "icon_theme": "Catppuccin Mocha",
+  // "theme": "Custom Gruber Darker - Minimal", // in theme.json
+  // "icon_theme": "Catppuccin Frappé",
+  "theme": "Catppuccin Latte", // in theme.json
+  "icon_theme": "Catppuccin Latte",
 
   // Font
-  "buffer_font_family": "Fira Code",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_weight": 500,
-  "buffer_font_size": 15,
-  "ui_font_family": "Fira Code",
-  "ui_font_size": 15,
+  "buffer_font_size": 16,
+
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_size": 16,
   "show_whitespaces": "selection",
 
   "toolbar": {
@@ -27,6 +31,9 @@
     "show_tab_bar_buttons": false,
     "show_nav_history_buttons": false
   },
+  "project_panel": {
+    "dock": "left"
+  },
 
   "git": {
     "git_gutter": "tracked_files",
@@ -36,13 +43,17 @@
     },
     "hunk_style": "unstaged_hollow"
   },
-  "show_completion_documentation": false,
+  "show_completion_documentation": true,
 
   // ####################################
   // Languages
   // ####################################
 
   "file_scan_exclusions": [
+    // Editors
+    "**/.idea",
+
+    // General
     "**/.git",
     "**/.svn",
     "**/.hg",
@@ -51,17 +62,21 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
+
     // Python
     "**/__pycache__",
-    "**/.pytest_cache"
+    "**/.pytest_cache",
+    "**/.venv",
+
     // Elixir
-    // "**/_build"
-    // "**/.elixir_ls"
+    "**/_build",
+    "**/.elixir_ls",
+    "**/deps"
   ],
 
   "languages": {
     "Python": {
-      "language_servers": ["pyright", "ty", "ruff"],
+      "language_servers": ["ty", "ruff"],
       "format_on_save": "on",
       "formatter": [
         {
@@ -85,5 +100,10 @@
   // ####################################
   // SSH
   // ####################################
-  "ssh_connections": []
+  "ssh_connections": [
+    {
+      "host": "vps",
+      "projects": []
+    }
+  ]
 }

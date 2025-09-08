@@ -50,13 +50,14 @@ install_bulk() {
 # ---------------------------
 install_bulk zsh zsh-syntax-highlighting \
   git jj mise wget \
-  cloc tldr fastfetch btop \
-  docker
+  fzf ripgrep cloc tldr \
+  fastfetch btop \
+  ollama docker
 
 # ---------------------------
 # Main Applications
 # ---------------------------
-install_bulk 1password raycast google-chrome zen linearmouse shottr spotify docker-desktop
+install_bulk 1password raycast google-chrome zen linearmouse shottr spotify docker-desktop jordanbaird-ice
 
 # ---------------------------
 # Communication Apps

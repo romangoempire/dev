@@ -12,7 +12,6 @@ alias zshconfig="zed ~/.zshrc"
 alias sshconfig="zed ~/.ssh/config"
 alias config="zed ~/.config/ghostty/config"
 # python
-alias src="source $HOME/dev/.init.sh"
 alias d="deactivate"
 alias py="python3"
 alias pip="pip3"

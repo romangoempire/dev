@@ -1,20 +1,7 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.1",
   "schemes" : [
     {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        },
-        "reverse" : {
-          "vertical" : false,
-          "horizontal" : true
-        }
-      },
-      "pointer" : {
-        "disableAcceleration" : true,
-        "acceleration" : 1
-      },
       "buttons" : {
         "universalBackForward" : true
       },
@@ -22,54 +9,70 @@
         "device" : {
           "category" : "mouse",
           "productID" : "0xc547",
-          "vendorID" : "0x46d",
-          "productName" : "USB Receiver"
-        }
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "productName" : "Magic Trackpad von Roman",
-          "vendorID" : "0x4c",
-          "productID" : "0x265",
-          "serialNumber" : "34:B1:EB:ED:2E:66",
-          "category" : "trackpad"
-        }
-      },
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
-        }
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "productID" : "0xc54d",
-          "serialNumber" : "317538733433",
           "productName" : "USB Receiver",
-          "category" : "mouse",
           "vendorID" : "0x46d"
         }
       },
+      "pointer" : {
+        "acceleration" : 1,
+        "disableAcceleration" : true
+      },
       "scrolling" : {
         "acceleration" : {
           "vertical" : 1
+        },
+        "reverse" : {
+          "horizontal" : true,
+          "vertical" : false
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "productID" : "0x265",
+          "productName" : "Magic Trackpad von Roman",
+          "serialNumber" : "34:B1:EB:ED:2E:66",
+          "vendorID" : "0x4c"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xc54d",
+          "productName" : "USB Receiver",
+          "serialNumber" : "317538733433",
+          "vendorID" : "0x46d"
         }
       },
       "pointer" : {
         "acceleration" : 0,
         "speed" : 0.2
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "reverse" : {
+          "vertical" : true
+        }
       }
     },
     {
       "if" : {
         "device" : {
-          "vendorID" : "0x0",
-          "productName" : "Apple Internal Keyboard \/ Trackpad",
           "category" : "trackpad",
-          "productID" : "0x0"
+          "productID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x0"
         }
       },
       "scrolling" : {
@@ -81,10 +84,10 @@
     {
       "if" : {
         "device" : {
-          "vendorID" : "0x1532",
-          "productID" : "0x83",
           "category" : "mouse",
-          "productName" : "Razer Basilisk X HyperSpeed"
+          "productID" : "0x83",
+          "productName" : "Razer Basilisk X HyperSpeed",
+          "vendorID" : "0x1532"
         }
       },
       "scrolling" : {
